@@ -1,0 +1,9 @@
+void main() {
+  var mensaje = bienvenido();
+  print('$mensaje de flutter');
+  print(mensaje.toUpperCase());
+}
+
+bienvenido() {
+  return "bienvenido al curso";
+}
