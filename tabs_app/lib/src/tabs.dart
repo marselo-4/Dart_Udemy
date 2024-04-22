@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tabs_app/src/screens/contact.dart';
+import 'package:tabs_app/src/screens/home.dart';
+import 'package:tabs_app/src/screens/video.dart';
 
 class MyTabs extends StatefulWidget {
   @override
@@ -27,8 +30,12 @@ class _MyTabsState extends State<MyTabs> {
         ),
       ),
       
-      body: Center(
-        child: Text('Tabs Example'),
+      body: TabBarView(
+        children: <Widget>[
+          Home(),
+          Video(),
+          Contact()
+        ],
       ),
    ));
   }
